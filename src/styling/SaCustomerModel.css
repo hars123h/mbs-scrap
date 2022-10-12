@@ -1,0 +1,95 @@
+.SaCustomerModel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    font-family: Montserrat;
+    animation: fadein 1s;
+    margin-top: -3rem !important;
+}
+
+.css-1ex1afd-MuiTableCell-root {
+    padding: 0;
+}
+
+.Atmodel {
+    width: 110%;
+    margin-left: -20rem;
+    height: 120vh;
+}
+
+.AtmodelBody {
+    margin-left: 41.5rem;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.SaCustomerModel__body__title {
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    width: 100%;
+    top: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #8a28d9;
+}
+
+.SaCustomerModel__body__title h3 {
+    margin-top: 5px;
+}
+
+.SaCustomerModel__body__title p {
+    font-size: small;
+    font-family: Montserrat;
+    margin-bottom: 5px;
+    opacity: .9;
+}
+
+.SaCustomerModel__body {
+    width: 45rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-right: 20rem;
+    border-radius: 10px;
+}
+
+
+.SaCustomerModel__body__bidDetails {
+    height: 20rem;
+    width: 100%;
+    max-height: 20rem;
+    overflow-y: auto;
+    padding-left: 20px;
+}
+
+.SaCustomerModel__body__bidDetails h3 {
+    text-align: center;
+}
+
+.SaCustomerModel__body__bidDetails__img {
+    width: 100px;
+    object-fit: contain;
+
+}
+@media  screen and (min-width:1210px) {
+    .SaCustomerModel__body{
+        margin-right: 14rem !important;
+    }
+    
+}

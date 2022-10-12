@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.saagent__button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: Montserrat;
+}
+
+.saTotalFunds__card__content
+{
+  width: 38rem !important;
+}
+.saTotalFunds__card__content__body{
+  width: 100%;
+}
+.saTotalFunds__card__head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.saagent__button button {
+  width: 200px;
+  font-size: large;
+  font-weight: 600;
+  font-family: Montserrat;
+}
+.saSectionHeading{
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: Center;
+  justify-content: space-between;
+  font-family: Montserrat;
+}
+.saSectionHeading h2{
+  font-size: 1.5rem;
+  font-family: Montserrat;
+}
+.saAgentsList{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.saagentCard{
+  margin: 1rem;
+  border-radius: 0.5rem;
+  min-width: 12rem;
+  border-bottom: 2px solid transparent;
+  color: black;
+  box-shadow: 1px 1px 10px rgb(0 0 0 / 43%);
+  font-family: Montserrat;
+}
+.saagentCard:hover{
+  border-bottom: 2px solid #8a28d9;
+}
+.saagentCard__top{
+  padding: .5rem;
+  border-bottom: 1px solid grey;
+  margin-bottom: 0.3rem;
+ 
+}
+.saagentCard__top h3{
+  font-size: 1rem;
+  font-family: Montserrat;
+  margin-bottom: -.5rem;
+
+}
+.saagentCard__top i {
+  font-size: 1rem;
+  font-weight:400;
+  font-family: Montserrat;
+  
+}
+.saagentCard hr{
+  opacity: .3;
+  width: 100%;
+  font-family: Montserrat;
+}
+.saagentCard__moreInfo {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+}
+.saagentCard__moreInfo p {
+  font-size: .8rem;
+  font-weight:400;
+  font-family: Montserrat;
+ 
+}

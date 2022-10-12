@@ -1,0 +1,124 @@
+.TrackUpdateModal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    display: flex;
+    margin-top: -3rem !important;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    animation:fadein 1s;
+
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+.TrackUpdateModal__body{
+    margin-top: 3rem;
+    margin-right: 19rem;
+    background-color: #fff;
+    width: fit-content;
+    border-radius: 10px;
+    
+}
+.TrackUpdateModal__body__title {
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    top: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #8a28d9;
+}
+.TrackUpdateModal__body__title h2{
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    padding: 5px;
+}
+.TrackUpdateModal__body__Contents{
+    padding: 20px;
+    height: 35rem;
+    max-height: 35rem;
+    padding-bottom: 2rem;
+    overflow-y: auto;
+    
+}
+.TrackUpdateModal__body__Contents__shipment{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 20rem;
+    
+}
+.TrackUpdateModal__body__Contents__shipment p{
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+.TrackUpdateModal__body__Contents__grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+   
+}
+.TrackUpdateModal__body__Contents__grid input{
+    height: 40px;
+    width: 250px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.TrackUpdateModal__body__Contents__grid input:focus{
+    outline: none;
+}
+.TrackUpdateModal__body__Contents__shipment__checkbox input{
+    height: 40px;
+    width: 20px;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+.TrackUpdateModal__body__Contents__shipment__checkbox p {
+    font-weight: 600;
+    font-size: 20px;
+}
+.TrackUpdateModal__body__Contents__shipment__checkbox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.TrackUpdateModal__body__Contents__buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 1rem;
+}
+.TrackUpdateModal__body__Contents__grid__reinspect input{
+    height: 40px;
+    width: 250px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+}
+@media only screen and (min-width:1710px) {
+    .TrackUpdateModal__body__Contents
+    {
+        height: 40rem;
+        max-height: 45rem;
+    }
+    .TrackUpdateModal__body {
+        margin-top: 18rem;
+        margin-right: 27rem;
+        width: 52rem;
+    }
+}

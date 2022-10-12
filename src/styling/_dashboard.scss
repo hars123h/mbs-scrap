@@ -1,0 +1,345 @@
+.dashboardContainer{
+    width:100vw;
+    @include flex(row,unset,unset);
+    background:linear-gradient(35deg,rgb(228, 228, 228),rgb(240, 240, 240));
+    .dashboardNav{
+        width:20vw;
+        position:sticky;
+        height:100vh;
+        top:0;
+        @include flex(column,space-between ,unset);
+        a{
+            display:inline-block;
+            margin:0 auto;
+        }
+        img{
+            justify-self: center;
+            width:8rem;
+            align-self: center;
+            margin:4rem 0 4rem 1rem;
+        }
+        .dashboardNavBody{
+            flex:1;
+            ul{
+
+  
+               li{
+                   a{
+                       span{
+                           margin-left:0.5rem;
+                           overflow:hidden;
+                           white-space:nowrap;
+                       }
+                       display:flex;
+                       align-items: center;
+                       color:black;
+                       font-weight:bold;
+                       padding:0.5rem;
+                       margin-top:0.25rem;
+                       margin-bottom:0.25rem;
+                       border-radius:0.5rem 0 0 0.5rem;
+                        margin-left:1rem;
+                       font-size:1vw;
+                   }
+               }
+           }
+        }
+
+        .dashboardNavFooter{
+           .logOutLink,a{
+               white-space:nowrap;
+               overflow:hidden;
+               cursor:pointer;
+               display:flex;
+               align-items:center;
+               font-weight:bold;
+               font-size:1vw;
+               color:black;
+               padding:0.5rem;
+               margin-top:0.25rem;
+               margin-bottom:0.25rem;
+               border-radius:0.5rem 0 0 0.5rem;
+               margin-left:1rem;
+            }
+        }
+    }
+
+    .dashboardMain{
+        flex:1;
+        background:$base-bg-shade1;
+       }
+}
+
+.dashboardCont{
+
+    .dbcMain{
+        .dbcsecond{
+            .heading{
+                display:flex;
+                justify-content: space-between;
+                align-items:CEnter;
+                h2{
+                    margin-left:2rem;
+                    display:flex;
+                    align-items:Center;
+                    span{
+                        display:block;
+                        margin-right:0.5rem;
+                        width:25px;
+                        height:25px;
+                        border-radius:50%;
+                        background:Red;
+                    }
+                }
+            }
+
+            .fonelist{
+                height:20rem;
+                overflow:hidden;
+                width:70vw;         
+                margin:4rem ;
+                position:relative;
+                >p{
+                    border:1px solid #eee;
+                    padding:9rem;
+                    font-weight:light;
+                    color:#eee;
+                    font-size:1.5rem;
+                    text-align:Center;
+                }
+               
+            }
+        }
+    }
+}
+.fcar{
+    width:14rem;
+    height:20rem;
+    >div{
+        margin:0 2rem ;
+    }
+    a{
+        color:black;
+        div{
+        margin:1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            >h1{
+                text-align:right;
+                font-weight:400;
+                font-size:0.8rem;
+                margin-left:1rem;
+            }
+        }
+    }
+    //  .carImg{
+    //      position:Relative;
+    //      .onepriceicon{
+    //        position:absolute;
+    //        top:10px;
+    //        right:10px;
+    //      }
+    //  }
+     img{
+         height:12rem;
+         object-fit: cover;
+         border-radius:0.5rem;
+         width:100%;
+         background:#eee;
+     } 
+    
+    .cardDots{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items:center;
+        opacity:0.1;
+        pointer-events: none;
+        justify-content: center;
+        transition:all 0.3s ease;
+        margin-bottom:0.5rem;
+        button{
+            font-weight:bold;
+            border:none;
+            border:0.1px solid grey;
+            border-radius:0.2rem;
+            margin:0 0.1rem;
+            transition:all 0.3s ease;
+            cursor:pointer;
+        }
+    }
+    .cardBody{
+        transition:all 0.3s ease;
+        padding:0.5rem;
+        border-radius:0.5rem;
+
+    }
+    &:hover{
+        .cardBody{
+            box-shadow:1px 1px 10px grey;
+        }
+        .cardDots{
+            opacity:1;
+            pointer-events: visible;
+            button{               
+                 background:$base-sun-color;
+                  color:white;
+            }
+        }
+    }
+}
+.dbcNavbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:1rem ;
+    border-bottom:1px solid grey;
+}
+
+.profileContainer{
+    padding:5rem;
+    .head{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-bottom:2rem;
+        >div:last-child{
+            p{
+                margin-top:0.5rem;
+            }
+        }
+    }
+    .body{
+        margin-top:2rem;
+        // position:relative;
+        >div{
+            >div{
+                display:flex;
+                flex-wrap:wrap;
+                button:first-child{
+                  margin-right:1rem;
+                }
+            }
+
+        }
+        button{
+            margin-top:2rem; 
+        }
+        p,>div{
+            display:flex;
+            justify-content: space-between;
+            align-items:Center;
+            margin-top:2rem;
+            // padding-top2rem;
+            span{
+                text-transform:uppercase;
+                font-size:0.8rem;
+                font-weight:lighter;
+            }
+            font-weight:bold;
+        }
+        #addressAgent{
+            width:50%;
+            text-align:right;
+        }
+    }
+}
+.dialogEditBoxContainer{
+    padding:1.5rem;
+    >div{
+        display:flex;
+        align-items:Center;
+        justify-content: space-between;
+        margin:0.5rem 0;
+    }
+    input{
+        margin-left:2rem;
+    }
+    button{
+        margin-top:1rem;
+    }
+}
+
+.customerListContainer{
+    display:flex;
+    flex-direction:column;
+    padding:2rem;
+    .header{
+        display:flex;
+        align-items:Center;
+        justify-content: space-between;
+        margin-bottom:2rem;
+    }
+
+    .customerList{
+      display:grid;
+      grid-template-columns: repeat(6,1fr);
+      padding:0.5rem;
+      border-radius:0.5rem;
+      background:#eee;
+      margin-bottom:0.5rem;
+      overflow:hidden;
+      position:relative;
+          input{
+              width:100%;
+          }
+      .controls{
+          position:absolute;
+          top:0;
+          left:100%;
+          transform:translate(-100%,-50%);
+          height:110%;
+          padding-left:1rem;
+          background:linear-gradient(90deg,transparent,grey);
+          display:none;
+      }
+      &:hover{
+          .controls{
+              display:flex;
+          }
+      }
+    }
+    .customerList:first-child{
+        color:grey;   
+        background:white !important;
+        font-size:0.9rem;
+        font-weight:bold !important;
+     }
+
+}
+.controlsOfFavList{
+    display:flex;
+    padding-right:4rem;
+    button{
+        background:transparent;
+        border:none;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        background:transparent;
+        color:$base-sun-color;
+        border:1px solid $base-sun-color;
+        display:grid;
+        place-items:center;
+        margin:1rem;
+        cursor:pointer;
+        &:active{
+            background:$base-sun-color;
+            color:white;
+        }
+    }
+}
+.emptyBox{
+    display:grid;
+    place-items:CEnter;
+    width:20rem;
+    margin:0 2rem;
+    height:14rem;
+    border-radius:2rem;
+    border:1px solid $base-sun-color;
+    svg{
+        font-size:5rem;
+        color:$base-sun-color;
+    }
+}

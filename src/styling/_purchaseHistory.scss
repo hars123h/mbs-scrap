@@ -1,0 +1,93 @@
+.phContainer{
+    .phPurchases{
+        height:100vh;
+        .purchases{
+            padding:1rem;
+            display:flex;
+            flex-wrap:Wrap;
+            // justify-content: center;
+            >h1{
+                width:100%;
+                text-align: center;
+                color:#eee;
+            }
+            .purchase{
+                >div{
+                    margin: 1rem;
+                    color:black;
+                    cursor:pointer;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius:0.5rem;
+                    width:15rem;
+                    height:15rem;
+                    // border:4px solid red;
+                    box-shadow:1px 1px 10px rgb(219, 219, 219);
+
+                     .text{
+                         padding:1rem;
+                         h2{
+                             text-transform: capitalize;
+                         }
+                         height:7rem;
+                     }
+                    .img{
+                        height:8rem;
+                        width:100%;
+                        border-radius:inherit;
+                        object-fit: cover;
+                        }
+                     
+
+                }
+               
+            }
+        }
+    }
+}
+.phSpecificContainer{
+    padding:2rem;
+    .phHeading{
+        margin:2rem 0;
+    }
+    .phsbody{
+        display: grid;
+        grid-template-columns: 0.6fr 0.4fr;
+        align-items:Center;
+        column-gap: 4rem;
+        .title{
+            >p{
+                color:$gray-shade2;
+                font-size:1.5rem;
+              }
+        }
+
+        .phsdesc{
+            p{
+                b{
+                display:inline-block;
+                width:200px;
+                }
+            }
+            margin-top:2rem;
+            font-size:1rem !important;
+        }
+        >p{
+            font-size:1.5rem;
+
+        }
+        .title{
+
+            h1{
+                color:$base-sun-color;
+                font-size:4rem;
+            }
+        }
+        img{
+            min-height:5rem;
+            border-radius:0.5rem;
+            overflow:hidden;
+        }
+    }
+
+}

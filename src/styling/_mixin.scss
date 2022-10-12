@@ -1,0 +1,39 @@
+@mixin gridCenter($width,$height){
+
+    display:grid;
+    place-items:Center;
+    width:$width;
+    height:$height;
+
+}
+
+@mixin flex($dir,$jc,$ai){
+    display:flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin input-std{
+    background:white;
+    padding:0.5rem;
+    border:none;
+    border-radius:0.5rem;
+}
+
+@mixin control-button-layout{
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    border:none;
+    border:0.1px solid $base-sun-color;
+    display:grid;
+    place-items:center;
+    color:$base-sun-color;
+    background:transparent;
+    cursor:pointer;
+    &:active{
+        background:$base-sun-color-2;
+        color:$base-bg-shade1;
+    }
+}

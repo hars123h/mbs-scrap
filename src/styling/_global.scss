@@ -1,0 +1,472 @@
+@import "variable";
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#ddd;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+body{
+    font-family: Montserrat;
+    overflow-x: hidden;
+}
+textarea{
+    font-family:Montserrat;
+}
+
+.fixwidth{
+    width:90vw !important;
+    margin-right:Auto !important;
+    margin-left:auto !important;
+}
+
+.avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#8a28d9;
+    display:grid;
+    place-items:center;
+    color:white;
+    font-weight:bold;
+}
+
+img:not(.NAVBARLOGO){
+    display:block;
+    width:100%;
+    background:url("../static/whiteMBSLOGO.png"), linear-gradient(#eee, #ddd);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+}
+select{
+    border:none;
+    background:transparent;
+    appearance: none;
+    outline:none;
+    cursor:pointer;
+}
+input{
+    font-family:Montserrat;
+    &::placeholder{
+        font-family:Montserrat;
+    }
+}
+select{
+    font-family:Montserrat;
+    option{
+        padding: 0 0.5rem;
+        font-family:Montserrat;
+    }
+}
+button{
+    font-family:Montserrat;
+}
+.filter-input{
+    padding:0.2rem 0.5rem;
+    border:1px solid $base-sun-color;
+    border-radius:0.5rem;
+    width:100%;
+    background:white;
+}
+.flexRow{
+    display:flex;
+    align-items: center;
+}
+.filterBar{
+   display:none !important;
+}
+.zeroresContainer{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    >div{
+        color:#ddd;
+    }
+}
+.warningText{
+    color:orange;
+}
+.suTop{
+    display:flex;
+    justify-content: space-between;
+    padding:1rem;
+    align-items:Center;
+    border-bottom:1px solid grey;
+}
+.backButton1{
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    span{ 
+       margin-left:0.2rem;
+    }
+}
+
+.std-button-sun{
+    padding:0.75rem 2rem;
+    border-radius:0.5rem;
+    background:linear-gradient(30deg,$base-sun-color,$base-sun-color-2);
+    font-weight:bold;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:all 0.1s ease;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    &:hover{
+     //    box-shadow:1px 1px 20px $hovered-shadow;
+        background:linear-gradient(30deg,$base-sun-color-2,$base-sun-color);
+ 
+    }
+ }
+ .std-button-search{
+     padding:1rem;
+     justify-self:flex-end;
+     cursor:pointer;
+     border-radius:0.75rem;
+     background:$lg1;
+     border:none;
+     display:grid;
+     place-items:center;
+     &:hover{
+        //    box-shadow:1px 1px 20px $hovered-shadow;
+           background:linear-gradient(30deg,$base-sun-color-2,$base-sun-color);
+    
+       }
+ }
+ .std-button-2{
+    padding:1rem;
+    justify-self:flex-end;
+    cursor:pointer;
+    border-radius:0.75rem;
+    background:transparent;
+    border:none;
+    border:2px solid $base-sun-color;
+    color:$base-sun-color;
+    display:grid;
+    place-items:center;
+
+}
+.sexySearchInput1{
+    background:white;
+    // padding:0.2rem;
+    display:flex;
+    position:relative;
+    border-radius:5rem;
+    border:2px solid grey;
+    .icons{
+        cursor:pointer;
+        width:30px;
+        height:30px;
+        background:white;
+        display:grid;
+        place-items:Center;
+        border-radius:50%;
+    }
+    input{
+        border-radius:5rem;
+        border:none;
+         width:0;
+         transition :all 0.3s ease;
+         outline:none;
+        &::placeholder{
+            font-family:Montserrat;
+        }
+        &:active{
+            width:10rem;
+
+        }
+    }
+    &:hover{
+        input{
+            padding:0 0.5rem;
+            width:10rem;
+        }
+    }
+}
+
+ .std-heading1 {
+     font-size:1.75rem;
+ }
+ .std-heading2{
+     font-size:2rem;
+     color:$base-sun-color;
+ }
+ .std-helping-text1{
+     font-size:0.9rem;
+     font-weight:400;
+     margin-top:0.5rem;
+     color:$gray-shade3;
+ }
+ .circularButton{
+     border:none;
+     border-radius:50%;
+     border:2px solid grey;
+ }
+ .std-input1{
+     border:none;
+     border-bottom:1px solid black;
+     margin:0 0.5rem;
+     padding:0.5rem;
+     background:$base-bg-shade1;
+      border-radius:0.3rem;
+     transition:all 0.3s ease;
+     &:focus{
+         outline:none;
+     }
+
+ }
+ .std-input2{
+     border:none;
+     border:1px solid $gray-shade2;
+     padding: 0.75rem 0.75rem;
+     border-radius:0.5rem;
+ }
+ .std-input-password{
+    border:none;
+    border:1px solid $gray-shade2;
+    padding: 0.75rem 0.75rem;
+    border-radius:0.5rem;
+    position:relative;
+    button{
+        position:absolute;
+        top:0;
+        right:0;
+        width:10%;
+        height:100%;
+        display: grid;
+        place-items:center;
+    }
+}
+ .section{
+     width:80vw;
+     margin:4rem auto;
+ }
+ .centerAlignedH1{
+     text-align:center;
+     margin:4rem 0 2rem 0;
+ }
+ 
+ .rowUsingFlex{
+     @include flex(row,unset,center);
+ }
+ .activeLink{
+     border-bottom:2px solid $base-sun-color-2;
+ }
+ .selectedLink{
+     background:$lg1;
+     padding:0.5rem 1rem;
+     display:block;
+     border-radius:1rem;
+     color:$base-bg-shade1 !important;
+     box-shadow:1px 1px 30px $gray-shade2;
+ }
+ .buttonInContainer{
+     @include gridCenter(60px,60px);
+     border-radius:50%;
+     background:transparent;
+     border:0.1px solid $base-bg-shade1;
+     color:$base-bg-shade1;
+     font-size:3rem;
+     &:active{
+       background:$base-bg-shade1;
+       color:$base-sun-fontColor;
+     }
+ }
+
+
+ .afterLoginActiveLink{
+    // pointer-events:none;
+    background:white;
+    svg{
+      color:$base-sun-color;
+    }
+ }
+
+ .fixedButton{
+     position:fixed;
+     bottom:25px;
+     right:25px;
+     width:50px;
+     height:50px;
+     display:grid;
+     place-items:Center;
+     border-radius:50%;
+     background:$base-sun-color;
+     color:white;
+     cursor:pointer;
+     transition:all 0.3s ease;
+     &:active{
+         transform:rotate(360deg);
+     }
+     &:hover{
+         box-shadow: 1px 1px 10px grey;
+     }
+ }
+
+ .stdcircularbutton{
+     padding:1rem;
+     width:fit-content;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     border:2px solid $base-sun-color;
+     background:transparent;
+     color:white;
+     cursor:pointer;    transition:all 0.3s ease;
+     &:hover{
+         background:$base-sun-color;
+         color:white !important;
+     }
+
+ }
+ .notificationContainer{
+     position:relative;
+     .notificationBox{
+         z-index:1000000;
+         position:absolute;
+         overflow:hidden;
+         top:100%;
+         right:50%;
+         width:20rem;
+         height:60vh;
+         background:white;
+         border-radius:0.5rem;
+         border:1px solid $base-sun-color;
+         box-shadow:1px 1px 10px rgba(0, 0, 0, 0.411);
+         .allNotifications{
+            overflow-y:auto !important;
+            height:100%;
+         }
+         .heading{
+             padding:1rem;
+             background:$lg1;
+             color:white;
+             z-index:1;
+         }
+         .notificationBoxIndividual{
+             font-size:0.8rem;
+             padding:1rem;
+             position:relative;
+             overflow:hidden;
+             transition: all 0.1s ease;
+             border-top:1px solid $base-sun-color;
+             display:grid;
+             grid-template-columns: 1fr 0.1fr;
+             column-gap: 1rem;
+             .nControls{
+                 display:flex;
+             }
+             button{
+                 cursor:pointer;
+                 height:100%;
+                 border:none;
+                 transition:all 0.3s ease;
+                 opacity:0;
+                 background:transparent;
+                 pointer-events:none;
+                 svg{
+                     color:$base-sun-color;
+                 }
+             }
+             .notificationLink{
+                 &:hover{
+                     text-decoration:underline;
+                 }
+             }
+             &:hover{
+                 button{
+                     pointer-events:visible;
+                     opacity:1;
+                 }
+             }
+         }
+     }
+     >button{
+         border:none;
+         background:transparent;
+         border-radius:50%;
+         width:30px;
+         height:30px;
+         position:relative;
+         .redDotsNotification{
+             position:absolute;
+             top:10%;
+             right:10%;
+             width:10px;
+             height:10px;
+             border-radius:50%;
+             background:REd;
+         }
+         &:active{
+             background:#eee;
+         }
+     }
+ }
+ .individual:first-child,.fund:first-child,.todaysBidIndContainer:first-child{
+    background:none;
+    border-top:3px solid $base-sun-color;
+    border-radius: 0 !important;
+    position:relative;
+    cursor:pointer;
+    &:before{
+        position:absolute;
+        top:0;
+        right:0%;
+        height:10px;
+        width:15px;
+        user-select: none;
+        background:$base-sun-color;
+        content:"";
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
+    }
+}
+.internetStatus{
+    display:flex;
+    position:fixed;
+    bottom:5%;
+    right:5%;
+    border-radius: 1rem;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.452);
+    background:linear-gradient(57deg,white,rgb(240, 240, 240));
+    padding:1rem;
+    display:none;
+    svg{
+        margin-right:1rem;
+    }
+}
+// .redDotsNotification{
+//     width:15px;
+//     height:15px;
+//     background:red;
+//     border-radius: 50%;
+// }

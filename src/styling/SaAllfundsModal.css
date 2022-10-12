@@ -1,0 +1,135 @@
+.SaAllfundsModal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation:fadein 1s;
+    /* z-index: 1000; */
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+.SaAllfundsModal__body {
+    background-color: #fff;
+    width: 387px;
+    height: auto;
+    margin-right: 20rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 10px;
+}
+.SaAllfundsModal__body___top{
+    width: 100%;
+    height: 45px;
+    background: #8a28d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.SaAllfundsModal__body__custDeatils{
+    width: 350px;
+    height: auto;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.SaAllfundsModal__body__aprovalbutton{
+    width: 100%;
+    display: flex;
+}
+.SaAllfundsModal__body__aprovalbutton button{
+    margin-top: 1rem;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 5px 12px 5px #ccc;
+    border-radius: 5rem;
+    padding-left: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #8a28d9;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    font-weight: bold;
+}
+.SaAllfundsModal__body__aprovalbutton button:hover{
+    background-position: left;
+    color: #8a28d9;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+
+   
+}
+.SaAllfundsModal__body__amount{
+display: flex;
+width: 100%;
+gap: 10px;
+margin-top: 1.5rem;
+
+}
+.SaAllfundsModal__body__amount input{
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: 2px 5px 12px 5px #ccc;
+    border-radius: 10rem;
+    padding-left: 1rem;
+
+}
+.SaAllfundsModal__body__amount select{
+    width: 80px;
+    margin-left: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 2px 5px 12px 5px #ccc;
+    border-radius: 10rem;
+    padding-left: .2rem;
+}
+.SaAllfundsModal__body__amount__select{
+    display: flex;
+    background-color: #fff;
+    
+}
+.SaAllfundsModal__body__custDeatils__name{
+    width: 100%;
+}
+.SaAllfundsModal__body__custDeatils__name input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 5px 12px 5px #ccc;
+    border-radius: 10rem;
+    padding-left: 1rem;
+}
+.SaAllfundsModal__body__amount__change{
+    width: 100%;
+}
+.SaAllfundsModal__body__amount__change input{
+    margin-top: 2rem;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 5px 12px 5px #ccc;
+    border-radius: 10rem;
+    padding-left: 1rem;
+}

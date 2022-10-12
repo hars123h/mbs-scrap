@@ -1,0 +1,77 @@
+
+.creaetInvoice
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: montserrat;
+}.creaetInvoice h3{
+    color: #8a28d9;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.createinvoice__heading{
+    width: 100%;
+    height: 30px;
+    background-color: #8a28d9;
+    padding: 3px;
+}
+.createinvoice__heading h3{
+    color: #fff;
+    margin-left: 5px;
+}
+.createInvoice__detailsFill{
+    /* margin-left: 2rem; */
+}
+.createInvoice__detailsFill input{
+    width: 310px;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 10rem;
+    padding-left: 1rem;
+
+}
+.createInvoice__detailsFill input:focus{
+    outline: none;
+}
+.creaetInvoice__submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+.creaetInvoice__submit button{
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to left, #8a28d9 50%, white 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    color: #fff;
+    font-size: large;
+    width: auto;
+    margin-right: 19px;
+    font-family: Montserrat;
+    border-radius: 15px;
+    border: 1px solid #8a28d9;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.creaetInvoice__submit button:hover{
+    background-position: left;
+    color: #8a28d9;
+    box-shadow: 1px 2px 5px #8a28d9;
+}
+.para{
+    width: 200px;
+    padding-bottom: 10px;
+}
+.k-picker{
+    background-image: none !important;
+}

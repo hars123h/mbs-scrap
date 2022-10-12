@@ -1,0 +1,94 @@
+.editable {
+  width: 100%;
+}
+
+.editable_display {
+  padding: 6px 12px;
+  border-radius: 3px;
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+  width: fit-content;
+  transition: 200ms;
+}
+
+.editable_display:hover {
+  background-color: #ddd;
+}
+
+.editable_edit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width:100%;
+
+
+}
+
+.editable_edit input {
+
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  height: 45px;
+  width:100%;
+}
+.editable_edit input svg{
+  margin-top: 1rem;
+}
+.editable__field input{
+ gap: 10px;
+
+}
+.editable_edit_footer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.editable_edit_footer button {
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(to left, #8a28d9 50%, white 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+  color: #fff;
+  font-size: large;
+  width: 100px;
+  /* margin-right: 5rem; */
+  font-family: Montserrat;
+  border-radius: 5px;
+  border: 1px solid #8a28d9;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.editable_edit_footer button:hover {
+  background-position: left;
+    color: #8a28d9;
+    box-shadow: 1px 2px 5px #8a28d9;
+}
+
+.editable_edit_footer button:active {
+  transform: translateY(2px);
+}
+
+.editable_edit_footer .closeIcon {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.assinedTo{
+  display: flex;
+  flex-direction: column;
+ margin-top: 10px;
+}
+.assinedTo .cardinfo_box{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cardinfo_box_title{
+  margin-bottom: .5rem;
+}

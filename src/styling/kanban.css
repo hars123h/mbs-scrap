@@ -1,0 +1,143 @@
+.Taskmanagement__Main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.DropDown{
+    border:  1px solid #8a28d9;
+    width: 18rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+}
+.DropDown svg{
+    position: absolute;
+    cursor: pointer;
+    right: 1rem;
+}
+.DropDown select
+{
+    width: 30rem !important;
+    /* width: 20rem !important; */
+    padding: 3px !important;
+}
+.DropDown select option
+{
+   
+    height: 30px;
+    padding: 5px !important;
+    font-size: 15px;
+}
+
+.taskmangement_body {
+
+    scroll-behavior: smooth;
+    /* min-width: 115rem !important; */
+    /* width: 110rem; */
+    height: 75rem;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex: 1;
+
+}
+
+.kanban {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 3rem;
+    /* width: 100rem !important; */
+    gap: 5px;
+    overflow-x: scroll !important;
+
+}
+
+.kanban::-webkit-scrollbar {
+    display: none;
+}
+
+.kanban__section {
+    width: 300px;
+    padding: 10px;
+    background-color: #ccc;
+    color: #000;
+    max-height: 33.5rem;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 2rem;
+
+}
+
+.kanban__section::-webkit-scrollbar {
+    display: none;
+}
+
+.kanban__section__title {
+    font-size: 20px;
+    height: 40px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.kanban__section__title svg {
+    color: #8a28d9;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.taskmangement_body__head {
+    color: #8a28d9;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 10px;
+    margin-top: 2.5rem;
+    /* z-index: 110 !important; */
+
+
+}
+
+.taskmangement_body__head h3 {
+    font-family: montserrat;
+    font-size: 30px;
+    top: 1rem;
+    position: fixed;
+}
+
+/* @media screen and (max-width:1290px) {
+    .KanbanBoardMain {
+        width: 115rem;
+    }
+} */
+
+@media only screen and (min-width:2200px) {
+    .kanban {
+        gap: 3rem;
+    }
+
+}
+@media only screen and (min-width:2500px) {
+    .kanban {
+        gap: 8rem;
+    }
+
+}

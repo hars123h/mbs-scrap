@@ -1,0 +1,35 @@
+.saInvoiceSearchBody__Heading
+{
+    height: 30px;
+    background-color: #8a28d9;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 3px;
+
+}
+.saInvoiceSearch__left{
+    flex: .5;
+}
+.saInvoiceSearchBody__Heading h3{
+    margin-left: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.saInvoiceSearchBody__container {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: .5rem;
+    margin-right: .7rem;
+    gap: 20px;
+
+
+}
+.saInvoiceSearch__right{
+    display: flex;
+    flex: .5;
+    margin-top: -2rem;
+    width: 50rem; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

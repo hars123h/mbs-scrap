@@ -1,0 +1,146 @@
+.allbidsContainer{
+    position: relative;
+
+    .bidHistoryContainer{
+        // .heading{
+        //     margin:2rem 0 0rem 0;
+        // }
+        .header{
+            display:flex;
+            justify-content: flex-end;
+            margin:1rem;
+            >div{
+                display:flex;
+                align-items: flex-end;
+                p{
+                    margin-right:1rem;
+                }
+                button{
+                    display:flex;
+                    align-items:flex-end;
+                    margin:0 0.5rem;
+                }
+
+            }
+        }
+        .all{
+            padding:2rem;
+            padding-top:0;
+            .individual:first-child{
+                font-weight:bold;
+                background:transparent;
+                cursor:pointer;
+            }
+            .individual{
+                display:grid;
+                align-items:Center;
+                grid-template-columns: repeat(8,1fr);
+                background:#eee;
+                padding:0.5rem;
+                border-radius:0.5rem;
+                margin:2px 0;
+            }
+        }
+    }
+    .bidsMain{
+        >h2{
+            margin:2rem 0;
+        }
+        .bidsGrid{
+            display:grid;
+            grid-template-columns: 0.7fr 0.3fr;
+            margin-right:3rem;
+            .bgleft{
+                margin-right:5rem;
+                .todayBids{
+                    display:grid;
+                    grid-template-columns: repeat(3,1fr);
+                    justify-content: space-between;
+                    .todayBid{
+                        margin:0 1rem;
+                        // padding:1rem;
+                        border-radius:0.5rem;
+                        box-shadow:1px 1px 10px rgb(236, 236, 236);
+                        display:flex;
+                        align-items:Center;
+                        justify-content: space-between;
+                        background:rgb(238, 238, 238);
+                        img{
+                           width:10rem;
+                           border-radius: inherit;
+                          
+                        }
+                        p{  
+                            padding:1rem;
+                            width:5rem;
+                        }
+                    }
+                }
+            }
+            .bgright{
+                margin-bottom:5rem;
+                >p{
+                    margin:0 0 2rem 0;
+                    text-align:Center;
+                }
+                .currentBids{
+                    border:1px solid black;
+                    background:radial-gradient(rgb(224, 224, 224),rgb(243, 243, 243));
+                    max-height:100vh;
+                    overflow: auto;
+                    .currentBid{
+                        border-bottom:1px solid grey; 
+                        padding:1rem;
+                        display:flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+.minimumMakeDialogAmount{
+
+    h1{
+        color:$base-sun-color;
+    }
+    .cardetails{
+        display:flex;
+        align-items: center;
+    }
+    input{
+        color:black;
+        font-family: montserrat;
+        &::placeholder{
+            font-family: Montserrat;
+            color:black;
+        }
+    }
+    select{
+        font-family:montserrat;
+        option{
+            font-family: Montserrat;
+        }
+    }
+    .formForBidding{
+        margin-top:2rem;
+        input,select{
+            width:100%;
+            margin-bottom:1rem;
+        }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+    }
+}

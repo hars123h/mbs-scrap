@@ -1,0 +1,6 @@
+.MuiDialog-root{
+    background:transparent; 
+}
+.MuiDialog-paper{
+    border-radius:1rem;
+}

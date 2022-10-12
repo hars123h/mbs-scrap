@@ -1,0 +1,61 @@
+.sapurchase__table__container__head{
+    width: 100%;
+    background-color: #8a28d9;
+    height: 30px;
+    padding: 4px;
+    color: #fff;
+}
+.sapurchase__table__container__head h3{
+    font-family:montserrat
+}
+.sapurchase__table__container__searchBy{
+    margin-top: 2rem;
+    
+}
+.sapurchase__table__container__searchBy p{
+    margin-bottom: 2rem;
+
+}
+.sapurchase__table__container__searchBy p{
+    font-family: montserrat;
+    font-size: 30px;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.sapurchase__table__container__searchBy__fields input{
+    width: 310px;
+    border: .5px solid grey;
+    height: 30px;
+    border-radius: 10rem;
+    padding: 10px;
+    outline: none;
+}
+.sapurchase__table__container__searchBy__button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.sapurchase__table__container__searchBy__button button{
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to left, #8a28d9 50%, white 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    color: #fff;
+    font-size: large;
+    width: auto;
+    margin-right: 19px;
+    font-family: Montserrat;
+    border-radius: 15px;
+    border: 1px solid #8a28d9;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.sapurchase__table__container__searchBy__button button:hover{
+    background-position: left;
+    color: #8a28d9;
+    box-shadow: 1px 2px 5px #8a28d9;
+}

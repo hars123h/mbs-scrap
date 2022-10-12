@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.saAllFunds__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 60vh;
+
+}
+
+.saAllFunds__cards__right {
+  flex: 1 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.saAllFunds__cards__left {
+  flex: .4;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+
+
+}
+
+.saAllFunds__cards__left::-webkit-scrollbar {
+  /* display: none; */
+}
+
+.saAllFunds__cards__left__card__container {
+  margin-bottom: 5px;
+  height: 420px;
+  max-height: 420px;
+}
+
+.saTotalFunda {
+  width: 40rem;
+  margin-left: 1.5rem;
+  
+}
+
+.saTotalFunds__card {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+.saAllFunds__cards__left__card {
+  border: 1px solid lightgrey;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  width: 250px;
+  height: 130px;
+  text-align: center;
+
+
+}
+.saTotalFunds__card__content{
+  width: 120%;
+  margin-left: -1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: Montserrat;
+
+}
+
+
+.saAllFunds__cards__left__card:hover {
+  box-shadow: 2px 10px 10px #ccc;
+  transition: .5s ease-in-out;
+
+}
+
+.saTotalFunds__card__head {
+  text-align: center;
+}
+
+.saTotalFunds__card__head h2 {
+  margin-bottom: 5px;
+  font-family: Montserrat;
+}
+
+.saTotalFunds__card__head h4 {
+  margin-bottom: 5px;
+  font-family: Montserrat;
+}
+
+.saAllFunds__search {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -8px;
+  font-family: Montserrat;
+
+}
+.saAllFunds__search__button{
+  flex: 1;
+  
+}
+.saAllFundLoad__Button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.saAllFunds__search input {
+  border: 1px solid #8a28d9;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 4px;
+  margin-right: 5rem;
+  font-family: Montserrat;
+
+}
+.saTotalFunds__card__content__body{
+  max-height: 210px;
+  overflow-y: auto;
+  width: 100%;
+}
+.saTotalFunds__card__content__body::-webkit-scrollbar{
+  display: none;
+}
+.saAllFunds__search button{
+  padding: 9px;
+  text-align: center !important;
+  background: linear-gradient(to left, #8a28d9 50%, white 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+  color: #fff;
+  font-size: large;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #8a28d9;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10rem;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+}
+.saAllFunds__search button:hover{
+  background-position: left;
+  color: #8a28d9;
+  box-shadow: 1px 2px 5px #8a28d9;
+  transition: .5s ease-out;
+  
+}
+@media only screen and (min-width: 1600px) {
+  .saAllFunds__cards__left__card__container{
+    height: 700px;
+    max-height: 700px;
+  }
+  .saAllFunds__cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 80vh
+  }
+  .saAllFunds__cards__right{
+    margin-top: -4rem;
+  }
+}
