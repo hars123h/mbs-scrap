@@ -1,9 +1,7 @@
 {
   "name": "design_one",
   "version": "0.1.0",
-  "engines": {
-    "npm": "8.x"
-  },
+  
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",
